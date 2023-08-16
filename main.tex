@@ -1,0 +1,106 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  THE SEARCH FOR NEUTRINOLESS DOUBLE BETA DECAY      %%%
+%%%  2023 VERSION                                       %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[sn-mathphys]{sn-jnl}% Math and Physical Sciences Reference Style
+%\jyear{2021}%
+%\raggedbottom
+
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{xspace}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amssymb,letterspace}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{braket}
+\usepackage{bm}
+
+\begin{document}
+
+\include{defs}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% FRONTMATTER
+
+\title[The search for neutrinoless double beta decay]{The search for neutrinoless double beta decay}
+
+\author[1,2]{\fnm{Juan Jos\'e} \sur{G\'omez-Cadenas}}\email{jjgomezcadenas@dipc.org}
+
+\author[3]{\fnm{Justo} \sur{Mart\'in-Albo}}\email{justo.martin-albo@ific.uv.es}
+
+\author[4,5]{\fnm{Javier} \sur{Men\'endez}}\email{menendez@fqa.ub.edu}
+
+\author[6]{\fnm{Mauro} \sur{Mezzetto}}\email{mauro.mezzetto@pd.infn.it}
+
+\author[1,2]{\fnm{Francesc} \sur{Monrabal}}\email{francesc.monrabal@dipc.org}
+
+\author[3]{\fnm{Michel} \sur{Sorel}}\email{sorel@ific.uv.es}
+
+\affil[1]{\orgdiv{Donostia International Physics Center}, \orgname{ERC Basque Excellence Research Centre}, \orgaddress{\city{San Sebasti\'an / Donostia}, \postcode{E-20018}, \country{Spain}}}
+
+\affil[2]{\orgname{Ikerbasque (Basque Foundation for Science)}, \orgaddress{\city{Bilbao}, \postcode{E-48009}, \country{Spain}}}
+
+\affil[3]{\orgdiv{Instituto de F\'isica Corpuscular (IFIC)}, \orgname{CSIC \& Universitat de València}, \orgaddress{\city{ Paterna}, \postcode{E-46980}, \country{Spain}}}
+
+\affil[4]{\orgdiv{Departament de F\'isica Qu\`antica i Astrof\'isica}, \orgname{Universitat de Barcelona}, \orgaddress{\city{Barcelona}, \postcode{E-08028}, \country{Spain}}}
+
+\affil[5]{\orgdiv{Institut de Ci\`encies del Cosmos}, \orgname{Universitat de Barcelona}, \orgaddress{\city{Barcelona}, \postcode{E-08028}, \country{Spain}}}
+
+\affil[6]{\orgdiv{Sezione di Padova}, \orgname{INFN}, \orgaddress{\city{Padova}, \postcode{I-35131}, \country{Italy}}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\abstract{Neutrinos could be the only elementary particles identical to their own antiparticles, as postulated by Ettore Majorana almost a century ago. Neutrino oscillation experiments have established that neutrinos are indeed massive, and rekindled the question of the origin of their masses. Consequently, the last two decades have witnessed the development of a vigorous program of neutrinoless double beta decay experiments, spanning several isotopes and developing different strategies to handle the backgrounds to a putative signal. In addition, remarkable progress has been made in the understanding of the neutrinoless double beta decay nuclear matrix elements, thus reducing a substantial part of the theoretical uncertainties affecting the particle physics interpretation of this process. On the other hand, the negative results by several experiments, combined with the hint that neutrino mass ordering could be normal, may imply very light neutrino masses and thus very long lifetimes for the neutrinoless double beta decay process. In this report, we review the main aspects of such process, the recent progress on theoretical ideas and the experimental state-of-the-art. We then consider the experimental challenges to be addressed in order to increase the sensitivity to detect the process in the likely case that lifetimes are much longer than currently explored and discuss a selection of the most promising experimental efforts.  
+}
+\keywords{Neutrinos, Majorana, Double beta decay, Nuclear matrix elements}
+
+\maketitle
+%\tableofcontents
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction} \label{sec:intro} 
+\input{src/intro.tex}
+
+\section{Massive neutrinos} \label{sec:massivenu}
+\input{src/massivenus.tex}
+
+\section{Neutrinoless double beta decay} \label{sec:bb0nu}
+\input{src/bb0nu.tex}
+
+\section{Calculating nuclear matrix elements} \label{sec:nme}
+\input{src/nme.tex}
+
+\section{Ingredients for the ultimate neutrinoless double beta decay experiment} \label{sec:ingredients}
+\input{src/ingredients.tex}
+
+\section{The past, present and future of neutrinoless double beta decay experiments} \label{sec:experiments}
+\input{src/exps.tex}
+
+\section{Conclusions}
+\input{src/conclusions.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\backmatter
+
+\bmhead{Acknowledgments}
+The authors thank Stefano Gariazzo for providing the original notebook that has been adapted to generate one of the figures of this review and Lotta Jonimiemi for providing us with Fig.~\ref{fig:NME_density}.The authors acknowledge support by the Spanish Ministerio de Ciencia e Innovaci\'on (MICINN) under grants CONSOLIDER-INGENIO 2010 CSD2008-0037 (CUP) and FPA2009-13697-C04-04
+J.M is supported by grant PID2020-118758GB-I00 
+funded by MCIN/AEI/10.13039/5011 00011033; 
+by the ``Ram\'on y Cajal" grants RYC-2017-22781 funded by MCIN/AEI /10.13039/50110 0011033 and FSE “El FSE invierte en tu futuro”;  
+and by the  “Unit of Excellence Mar\'ia de Maeztu 2020-2023” award to the Institute of Cosmos Sciences, Grant CEX2019-000918-M funded by MCIN/AEI/10.13039/501100011033.
+We also thank Alessandro Bettini and Martin Hirsch for useful discussions and comments on the manuscript.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliography{references}
+
+\end{document}
+

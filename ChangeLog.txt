@@ -1,0 +1,25 @@
+LOGFILE WITH MAIN CHANGES BETWEEN 2012 AND 2023 VERSION
+Updated the introduction, removing outdated reference to Klapdor experiment and highlighting upcoming challenges.
+CHAPTER 1
+Updated references 1 (Gerda latest result) and 2 (KamLAND-Zen latest result)
+Removed reference to "observed already" (Klapdor)
+
+Update references to experiments, to describe better state-of-the-art
+CHAPTER 2
+
+
+CHAPTER 3
+
+
+CHAPTER 4
+
+
+CHAPTER 5
+
+
+CHAPTER 6
+
+
+CHAPTER 7
+
+
