@@ -72,7 +72,9 @@ At the depths of underground laboratories, the other only surviving radiation be
 
 \subsection{Sensitivity of a neutrinoless double beta decay experiment} \label{subsec:sensitivitydefinition}
 
-All \bbonu\ experiments have to deal with non-negligible backgrounds, an only partially efficient \bbonu\ event selection, and more or less difficulties to extrapolate their detection technique to large masses. It is instructive, however, to imagine an ideal, background-free, experiment. If such an experiment, after running for an exposure $\Mbb\cdot t$, observes no events, it would report an upper limit in the \bbonu\ decay rate $(\Tonu)^{-1}$, or possibly in the more relevant physical parameter \mbb:
+%All \bbonu\ experiments have to deal with non-negligible backgrounds, an only partially efficient \bbonu\ event selection, and more or less difficulties to extrapolate their detection technique to large masses. 
+
+Consider an ideal, background-free, experiment. If, after running for an exposure $\Mbb\cdot t$, no events are observed, an upper limit in \mbb could be reported:
 %
 \begin{equation}
 \mbb = K_{1} \sqrt{\frac{1}{\varepsilon\cdot \Mbb \cdot t}}, \label{eq:mbbx4}
@@ -86,14 +88,15 @@ K_{1} \simeq \sqrt{\frac{W_{\bb}}{N_A}\cdot \frac{1}{G^{0\nu}\lvert M^{0\nu}\rve
 %
 Equations~(\ref{eq:mbbx4}) and \ref{eq:k1} follow directly from eqs.~(\ref{eq:Tonu}) and (\ref{eq:Nbb}), see \cite{Gomez-Cadenas:2010zcc} for details.
 
-Let us now consider the sensitivity in the case of an experiment with background. In the large background approximation, the sensitivity as a function of the background rate $b$ follows the classical limit: $\mathcal{S}(b) \propto \sqrt{b}$, where $b$ is the mean predicted background level. In this limit, the \mbb\ sensitivity can be written as
+Consider now the case of an experiment with background in the limit in which the backgrounds are large enough as to follow a normal distribution, and thus the error associated to background subtraction varies as $\sqrt{b}$. Then:
+%  approximation, the sensitivity as a function of the background rate $b$ follows the classical limit: $\mathcal{S}(b) \propto \sqrt{b}$, where $b$ is the mean predicted background level. In this limit, the \mbb\ sensitivity can be written as
 %
 \begin{equation}
 \mbb =K_{2} \sqrt{\frac{b^{1/2}}{\varepsilon\cdot \Mbb \cdot t}} 
 \label{eq:mbbx1}
 \end{equation}
 %
-where $K_{2}\simeq K_1$ is, again, a constant depending on the isotope (see eq.~\ref{eq:k1}). If the background $b$ is proportional to the exposure $\Mbb \cdot t$ and to an energy window $\Delta E$ around \Qbb :
+where $K_{2}\simeq K_1$. If the background $b$ is proportional to the exposure $\Mbb \cdot t$ and to an energy window $\Delta E$ around \Qbb :
 \begin{equation}
 b = c\cdot \Mbb \cdot t\cdot \Delta E
 \label{eq:mbbx2}
@@ -102,33 +105,52 @@ b = c\cdot \Mbb \cdot t\cdot \Delta E
 with the background rate $c$ expressed in \ckkbby, then:
 %
 \begin{equation}
-\mbb = K_2  \ \sqrt{1/\varepsilon} \ \Big(\frac{c\cdot \Delta E}{\Mbb \cdot t}\Big)^{1/4} \label{eq:mbbx3}
+\mbb = K_2  \ \sqrt{1/\varepsilon} \ \Big(\frac{c\cdot \Delta E}{\Mbb \cdot t}\Big)^{1/4} 
+= \sqrt{\upsilon_1/\varepsilon}  \ \Big(\frac{\upsilon_2}{t}\Big)^{1/4} 
+\label{eq:mbbx3}
 \end{equation}
 %
+where 
+$$\upsilon_1 = \frac{W_{\bb}/N_A}{G^{0\nu}\lvert M^{0\nu}\rvert^2}$$ 
+and 
+$$\upsilon_2 = \frac{c\cdot \Delta E}{\Mbb t}.$$ 
+%
+%In short, the background limits dramatically the sensitivity of a double beta decay experiment, improving only as $(\Mbb \cdot t)^{-1/4}$ instead of the $(\Mbb \cdot t)^{-1/2}$ expected in the background-free case.
+%
+%Equations \ref{eq:k1} and 
+%\ref{eq:mbbx3}, dictate that \mbb\ is minimized when the two figures of merit
+%$\upsilon_1 = \frac{W_{\bb}}{G^{0\nu}\lvert M^{0\nu}\rvert^2}$ and 
+%$\upsilon_2 = \frac{c\cdot \Delta E}{\Mbb t}$ are minimized. Both depend on the choice of the isotope, but 
+The term $\upsilon_1$ is related with the physical properties of the isotope (molar mass, NME and available phase space), while $\upsilon_2$ is related wit experimental aspects such as the energy resolution, the background index or the total mass deployed by the experiment. 
 
-In short, the background limits dramatically the sensitivity of a double beta decay experiment, improving only as $(\Mbb \cdot t)^{-1/4}$ instead of the $(\Mbb \cdot t)^{-1/2}$ expected in the background-free case.
 
-Two aspects of eq.~(\ref{eq:mbbx2}), and in particular of our definition of the background rate $c$, deserve further clarification. First, for a given background level $b$, the background rate $c$ will in general depend on the choice of the energy window $\Delta E$, the latter quantity being typically of the order of the FWHM energy resolution of the experiment. This is the case if the background energy spectrum around \Qbb\ is not flat. Similarly, the background rate $c$ will in general depend on the mass \Mbb\ of the \bb\ emitting material considered. This is the case for backgrounds that are not uniformly distributed within the active mass, such as surface contaminations of materials or backgrounds that are of external origin. As already assumed in deriving eq.~(\ref{eq:mbbx3}), all background rate values are relative to the total mass \Mbb\ appearing in the signal count rate computation of eq.~(\ref{eq:Nbb}). 
 
-In the following, we discuss the various ingredients affecting the sensitivity of \bbonu\ experiments.
+%Two aspects of eq.~(\ref{eq:mbbx2}), and in particular of our definition of the background rate $c$, deserve further clarification. First, for a given background level $b$, the background rate $c$ will in general depend on the choice of the energy window $\Delta E$, the latter quantity being typically of the order of the FWHM energy resolution of the experiment. This is the case if the background energy spectrum around \Qbb\ is not flat. Similarly, the background rate $c$ will in general depend on the mass \Mbb\ of the \bb\ emitting material considered. This is the case for backgrounds that are not uniformly distributed within the active mass, such as surface contaminations of materials or backgrounds that are of external origin. As already assumed in deriving eq.~(\ref{eq:mbbx3}), all background rate values are relative to the total mass \Mbb\ appearing in the signal count rate computation of eq.~(\ref{eq:Nbb}). 
+
+%In the following, we discuss the various ingredients affecting the sensitivity of \bbonu\ experiments.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Choice of the double beta isotope} \label{subsec:isotope}
-In nature, 35 naturally-occurring isotopes are \bb\ emitters, but physics and practical considerations dictate that only a few are suitable for \bbonu\ searches.
+\subsubsection{Minimizing $\upsilon_1$: molar mass, \Qbb\ and NMEs.} \label{subsec:isotope}
+In nature, 35 naturally-occurring isotopes are \bb\ emitters, but practical considerations, such as isotope abundance, as well as feasibility of procurement,   purification and enrichment, dictate that only a few are suitable for \bbonu\ searches. Only 11 isotopes with large \Qbb ($Q_{\beta\beta}>2$ MeV)  have been proposed for \bbonu\ searches, and of those, only four (\Ge{76}, \Xe{136}, \Tl{130}, and \Mo{100}) are considered for the next generation of experiments (Next Generation Set or NGS, hereafter) and will be the focus of our discussion. 
 
-An ideal \bb\ isotope would: i) maximize the \bbonu\ signal; ii) minimize the contamination of the \bbtnu\ decay; and iii) minimize the impact of radioactive backgrounds. 
+Minimizing $\upsilon_1$ requires maximizing the product $G^{0\nu}\lvert M^{0\nu}\rvert^2$ and minimizing the molar mass. The two requirements contradict each other, since, for most isotopes, larger \Qbb\ implies also larger molar mass. On the other hand, since $G^{0\nu} \sim Q_{\beta\beta}^5$ \cite{Vogel:2008sx}, isotopes with large $Q$-values are strongly favored. The factor $\lvert M^{0\nu}\rvert^2$ in $\upsilon_1$, also favors strongly isotopes with larger NMEs. 
 
-Condition i) requires 
+%An ideal \bb\ isotope would: i) maximize the \bbonu\ signal; ii) minimize the contamination of the \bbtnu\ decay; and iii) minimize the impact of radioactive backgrounds. 
+
+%Condition i) requires 
 %
 %Let us start with considerations about the most favorable \bbonu\ phase space factors and nuclear matrix elements. We are interested in the isotopes that provide the highest \bbonu\ rate for the same \mbb\ mass, or, in other words, those that minimize the constants $K_1$ and/or $K_2$ appearing in eqs.~(\ref{eq:mbbx4}) and (\ref{eq:mbbx1}), respectively. As can be seen from eq.~\ref{eq:k1}, this requirement is equivalent to 
 %
-maximizing the product $G^{0\nu}\cdot\lvert M^{0\nu}\rvert^2/W_{\beta\beta}$ (see eq.~(\ref{eq:mbbx4})). Since $G^{0\nu}(Q,Z)$ varies as $Q_{\beta\beta}^5$ \cite{Vogel:2008sx}, isotopes with large $Q$-values are strongly favored. For this reason, only isotopes with $Q_{\beta\beta}>2$ MeV are usually considered for \bbonu\ searches. The 11 isotopes satisfying this criterion are shown in fig.~\ref{fig:phase_space}. Of the four isotopes used by current experiments and being considered for the next generation (\Ge{76}, \Xe{136}, \Tl{130}, and \Mo{100}),
-\Ge{76}, has the less favorable phase space factor (but the lowest $W_{\beta\beta}$ ) while the phase space factor of the other three are rather similar. Unfortunately, the two isotopes with
-%The isotopes with the 
-the most favorable phase space factors (${\rm ^{150}Nd}$ and ${\rm ^{48}Ca}$), are disfavoured for practical reasons (e.g, isotopic abundance, and enrichment feasibility).  
+%maximizing the product $G^{0\nu}\cdot\lvert M^{0\nu}\rvert^2/W_{\beta\beta}$ (see eq.~(\ref{eq:mbbx4})). Since $G^{0\nu}(Q,Z)$ varies as $Q_{\beta\beta}^5$ \cite{Vogel:2008sx}, isotopes with large $Q$-values are strongly favored. For this reason, only isotopes with $Q_{\beta\beta}>2$ MeV are usually considered for \bbonu\ searches. The 11 isotopes satisfying this criterion are shown in 
 
-Fig.~ \ref{fig:NME_full} shows that the values of nuclear matrix elements are rather similar for most isotopes (with the exception of \Ca{48}), and in fact, the uncertainty associated with the predictions of the different models is much large than the variations between isotopes for a given set of NMEs. The net result is that the four isotopes currently in use for \bbonu\ searches would yield a similar sensitivity (differing in no more than a factor two) in an ideal experiment, as illustrated in fig.~\ref{fig:SensiIdeal}.
+As shown in fig.~\ref{fig:phase_space}, 
+\Ge{76}, has the less favorable phase space factor of the NGS (but the lightest molar mass), while the other three isotopes have similar values. Notice also that the most favorable phase space factors (${\rm ^{150}Nd}$ and ${\rm ^{48}Ca}$), correspond to isotopes which are not considered feasible for practical reasons.   
+
+Fig.~ \ref{fig:NME_full}, on the other hand, show that the values of nuclear matrix elements are rather similar for most isotopes (with the exception of \Ca{48}), and in fact, the uncertainty associated with the predictions of the different models is much large than the variations between isotopes for a given set of NMEs. 
+
+Fig.~\ref{fig:SensiIdeal} shows the sensitivity that an ideal experiment using one of the four isotopes of the NGS could reach as a function of the exposure. This idealized (and totally unrealistic) sensitivity is in fact a measurement of $\upsilon_1$, and yields similar results (differing in no more than a factor two) for all the isotopes in the set.
+
 %Considering the relevant product of the phase space factor times the nuclear matrix element squared over the molar mass for the \bb\ isotopes currently being used in major experiments, we find variations of about a factor of 2 in \mbb\ sensitivity depending on the isotope and for an ideal experiment, as can be seen in fig.~\ref{fig:SensiIdeal} [REPETIR PARA GE, XE, TL, MO ONLY]. 
 %From this figure, and from phase space factor and nuclear matrix element considerations alone, we would conclude that \Se{82}, \Te{130} and \Nd{150} would be preferable to \Ge{76}. On the other hand, the molar mass term appearing in eq.~\ref{eq:k1} plays in favor of relatively light isotopes, such as \Ge{76} and \Se{82}. For example, for the same \bb\ isotope mass, a \Ge{76}-based detector contains almost twice as many \b\ nuclides as a \Nd{150}-based detector. Other factors, too, enter in the isotope choice, as discussed below.
  
@@ -141,8 +163,8 @@ Fig.~ \ref{fig:NME_full} shows that the values of nuclear matrix elements are ra
 \end{figure}
 %%%%%
 
-Condition iii) also requires choosing a \bb\ isotope with a high $Q_{\beta\beta}$ value. Backgrounds to \bbonu\ searches from natural radioactivity (see fig.~\ref{fig:decaychain}) populate the energy region below $\sim$3 MeV. This makes \Mo{100} which has a Q-value of 3034~keV, a very attractive candidate for \bbonu\ searches, and indeed it has been chosen as target by the future CUPID experiment. On the other hand, condition ii) requires an isotope with a \bbtnu\ mode as slow as possible. The best choice in this case would be \Xe{136} (the choice of EXO-200, kamLAND-Zen, NEXT, and the future nEXO experiment), which has a lifetime in excess of $10^21$~year. Instead, \Mo{100}\ has a lifetime two orders of magnitude faster ($\sim 10^21$~year), and would be disfavoured from this point of view. Conversely, experiments based in \Xe{136} have to deal with two important sources of background located very near the \Qbb\ of \Xe{136} ($\sim 2.5$ MeV), namely, 
-\Bi{214} (which emits a gamma that has a photoelectric peak at $\sim 2.4$ MeV), and \Tl{208} (which emits a gamma that has a photoelectric peak at $\sim 2.6$ MeV). The conclusion is that no ideal \bbonu\ isotope exists, and the choices of the different experiments imply alway a number of tradeoffs. 
+%Condition iii) also requires choosing a \bb\ isotope with a high $Q_{\beta\beta}$ value. Backgrounds to \bbonu\ searches from natural radioactivity (see fig.~\ref{fig:decaychain}) populate the energy region below $\sim$3 MeV. This makes \Mo{100} which has a Q-value of 3034~keV, a very attractive candidate for \bbonu\ searches, and indeed it has been chosen as target by the future CUPID experiment. On the other hand, condition ii) requires an isotope with a \bbtnu\ mode as slow as possible. The best choice in this case would be \Xe{136} (the choice of EXO-200, kamLAND-Zen, NEXT, and the future nEXO experiment), which has a lifetime in excess of $10^21$~year. Instead, \Mo{100}\ has a lifetime two orders of magnitude faster ($\sim 10^21$~year), and would be disfavoured from this point of view. Conversely, experiments based in \Xe{136} have to deal with two important sources of background located very near the \Qbb\ of \Xe{136} ($\sim 2.5$ MeV), namely, 
+%\Bi{214} (which emits a gamma that has a photoelectric peak at $\sim 2.4$ MeV), and \Tl{208} (which emits a gamma that has a photoelectric peak at $\sim 2.6$ MeV). The conclusion is that no ideal \bbonu\ isotope exists, and the choices of the different experiments imply alway a number of tradeoffs. 
 %As the energy resolution degrades, the experiments are affected by \bbtnu\ backgrounds in a more or less pronounced way, depending on the isotope.  This is true unless the energy resolution of the experiment is truly excellent, in which case even relatively fast \bbtnu\ modes do not constitute a serious background to \bbonu\ searches. This is illustrated in fig.~\ref{fig:twonubgr}. In this figure, the \mbb\ sensitivity at 90\% CL is shown for ideal experiments using five different isotopes as a function of FWHM energy resolution. The experiments, each assumed to use 100 \kgbb\ of \bb\ emitter mass and to run for five years, are ideal in the sense of having perfect \bbonu\ efficiency and of being affected only by \bbtnu\ backgrounds. As fig.~\ref{fig:twonubgr} illustrates, and as far as the \bbtnu\ background is concerned and for the same moderate energy resolution (say, 5-10\% FWHM), \Xe{136} is to be preferred over \Se{82} and \Nd{150}, thanks to its much longer \bbtnu\ half-life (see tab.~\ref{tab:bb2nu_exp}). TODO: MENTION \Te{130} HERE. For experiments featuring excellent energy resolution, say $<2\%$ FWHM, all experiments would operate in a essentially \bbtnu\ background-free regime, for the assumed 500 \kgbb$\cdot$yr exposure. This is typically the case of \Ge{76}, \Mo{100} and some \Te{130} experiments, see sect.~\ref{subsec:energyresolution}.. In practice, however, other backgrounds are always present, typically creating a continuum through the region of interest, and a better resolution improves the experimental sensitivity even in the $<2\%$ FWHM energy resolution range.
 %%%%%
 %\begin{figure}[t!b!]
@@ -157,11 +179,17 @@ Condition iii) also requires choosing a \bb\ isotope with a high $Q_{\beta\beta}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsection{Isotope mass} \label{subsec:isotope_mass}
+\subsubsection{Minimizing $\upsilon_2$: isotope mass}
+%\subsection{Isotope mass} \label{subsec:isotope_mass}
 
 %As explained above, large masses of \bb\ isotope are needed to explore the expected half-lives. 
-The current generation of double beta decay experiments use masses of the order of 100 kg. New-generation experiments will range from a few hundred kilograms to a few tons, depending on the proposal. This requires the procurement, refining and enrichment of rare isotopes. Of the four considered by future experiments, \Xe{136} offers many advantages. Xenon production is moderately high\footnote{The current xenon production is about 100 tons/yr, as a by-product of oxygen extraction from the air for the steel industry. Possible alternative techniques to increase this value are being explored \cite{Avasthi:2021lgy}.} and \Xe{136} is easier (and thus cheaper) to enrich that the other isotopes. The final product, a gas, is also easy to purify. \Te{136} is also attractive. Tellurium world production is even higher than that of xenon\footnote{estimated to be $\simeq$500 tons/yr} and has the advantage of having a high, 34\%, isotopic abundance of the \bb\ emitter, thus avoiding the   the need of isotopic enrichment, which greatly reduces costs. It is not surprising, therefore, that the large liquid-scintillator calorimeters have chosen those isotopes (, KamLAND-Zen uses \Xe{136} and SNO+ \Te{130}), since both permit, with current technology, deploy masses on the range of the ton (in fact  the KamLAND-Zen experiment owns already 800 kg of \Xe{136}), and loading even larger masses, in the range of 10 tons in their liquid scintillator appears feasible a priori. Xenon TPCs (the future nEXO and NEXT-HD experiments) will also use \Xe{136}, benefiting of the same advantages of the large calorimeters, e.g, the possibility of deploying large masses at relatively low cost, and the economy of scale (they are all monolithic detectors, in which the volume, and therefore the mass scales with the cubic power of the detector effective radius).  
+
+One way to minimize $\upsilon_2$ is to maximize the mass of the isotope being deployed. This requires, in turn, candidates that are isotopically abundant (such as 
+\Te{130} with a 34\%, isotopic abundance of the \bb\ emitter) and/or, easy to enrich and purify (such as \Xe{136})\footnote{The World production of both Xenon and Tellurium is also relatively high, in the range of few hundred tons/year.}.
+%
+%Consider \Xe{136} first. Xenon production is moderately high\footnote{The current xenon production is about 100 tons/yr, as a by-product of oxygen extraction from the air for the steel industry. Possible alternative techniques to increase this value are being explored \cite{Avasthi:2021lgy}.} and \Xe{136} is easier (and thus cheaper) to enrich that the other isotopes. The final product, a gas, is also easy to purify. \Te{136} is also attractive. Tellurium world production is even higher than that of xenon\footnote{estimated to be $\simeq$500 tons/yr} and has the advantage of having a high, 34\%, isotopic abundance of the \bb\ emitter, thus avoiding the   the need of isotopic enrichment, which greatly reduces costs. 
+%
+It is not surprising, therefore, that the large liquid-scintillator calorimeters have chosen those isotopes (, KamLAND-Zen uses \Xe{136} and SNO+ \Te{130}), since both permit, with current technology, deploy masses on the range of the ton (in fact  the KamLAND-Zen experiment owns already 800 kg of \Xe{136}), and deploying even larger masses, in the range of 10 tons appears feasible a priori. Xenon TPCs (the future nEXO and NEXT-HD experiments) will also use \Xe{136}, benefiting of the same advantages of the large calorimeters, e.g, the possibility of deploying large masses at relatively low cost, and the economy of scale\footnote{The large liquid scintillator calorimeters, as well as the xenon TPCs, are all monolithic detectors, in which the volume, and therefore the mass, scales with the cubic power of the detector effective radius, while some ---but not all--- of the backgrounds scale with the detector surface, which is proportional to the radius squared.}. 
 
 %Unfortunately, the \bb\ isotopes are not always abundant in nature, often requiring enrichment in order to obtain large, concentrated masses.
 
@@ -180,24 +208,33 @@ The current generation of double beta decay experiments use masses of the order 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Energy resolution} \label{subsec:energyresolution}
+\subsubsection{Minimizing $\upsilon_2$: Energy resolution} \label{subsec:energyresolution}
 %
-Together with a large isotope mass, good energy resolution is a necessary (but not sufficient!) requirement for the \emph{ultimate} \bbonu\ experiment. It is the only protection against the intrinsic \bbtnu\ background, and improves the signal-to-noise ratio in the region of interest around \Qbb. 
+%Together with a large isotope mass, good energy resolution is a necessary (but not sufficient!) requirement for the \emph{ultimate} \bbonu\ experiment. It is the only protection against the intrinsic \bbtnu\ background, and improves the signal-to-noise ratio in the region of interest around \Qbb. 
 
-The detectors for \bb\ searches that have achieved the best energy resolution so far are the \emph{germanium diodes} and the \emph{bolometers}. 
+Why then, choose \Ge{76} (LEGEND) or \Mo{100} (CUPID) for future \bbonu\ experiments, given the fact that the raw material will be more difficult to enrich and purify (thus more expensive, and presumably harder to produce in large quantities)? %Furthermore, both experiments will be based in piling up individual crystals, benefitting less of economy of scale than large liquid scintillators calorimeters (LLSC) and xenon TPCs (XeTPCs)
+%
+The answer to this question is energy resolution. The resolution of both KamLAND-Zen and SNO+, is of the order of 10\%\footnote{Unless otherwise stated all resolutions in this paper are FWHM.} dominated by fluctuations in the light collections of their PMTs. EXO measured a resolution of 3-4 \%, and nEXO expects 2-3 \%, while NEXT-White has measured 1\% and NEXT-100, as well as NEXT-HD expect to improve that number to 0.5-0.7 \%. Instead, 
+GERDA measured an spectacular resolution of 0.16\% (3.3$\pm$0.4~keV at 2039~keV\cite{GERDA:2020xhi}) and the crystals constituting the bulk of the LEGEND-200 experiment feature an even better energy resolution of of 0.14\% (2.9$\pm$0.1~keV)  (FWHM). CUPID, on the other side, will deploy crystals of 
+lithium molybdate (LMO, Li$_2$$^{100}$MoO$_4$), for which the measured resolution is 0.25\% ($7.6 \pm 0.7$ keV at  3034~keV \cite{CUPID:2020aow}). In both cases, therefore, the experiments have priorized energy resolution over mass. Notice that both factors compensate each other in $\upsilon_2$. 
 
-In germanium detectors the energy is measured via ionization (creation of electron-hole pairs in the semiconductor). The exposure-averaged FWHM energy resolution of the Ge detectors used in the final GERDA Phase II result was only 3.3$\pm$0.4~keV \cite{GERDA:2020xhi}. Considering that the \Qbb\ value in \Ge{76} is 2039~keV, this corresponds to a relative energy resolution of 0.16\% (FWHM). In particular, the large ICPC-type detectors constituting the bulk of the LEGEND-200 detectors featured an even better energy resolution of 2.9$\pm$0.1~keV (FWHM). 
+%The detectors for \bb\ searches that have achieved the best energy resolution so far are the \emph{germanium diodes} and the \emph{bolometers}. 
 
-In bolometers the energy is measured by detecting a temperature rise in crystals with very small specific heat. Several bolometric crystals have been proposed and tested for \bb\ searches, such as tellurite (TeO$_{2}$), lithium molybdate (LMO, Li$_2$$^{100}$MoO$_4$) and zinc selenide (ZnSe). For these three technologies, FWHM energy resolutions at the Q-values of the corresponding \bb\ emitters were measured to be: 7.8$\pm$0.5 \cite{CUORE:2021mvw}, 7.6$\pm$0.7 \cite{CUPID:2020aow} and 21.8$\pm$0.3 keV \cite{CUPID:2022puj}, respectively. TeO$_{2}$ and LMO detectors thus feature similar resolution performance among them based on the heat measurement, and superior to the ZnSe one. However, as we will see in the following (sect.~\ref{subsec:bgr_mitigation}), LMO detectors offer an advantage over TeO$_{2}$ ones, as they provide an additional scintillation light signal.
+%In germanium detectors the energy is measured via ionization (creation of electron-hole pairs in the semiconductor). The exposure-averaged FWHM energy resolution of the Ge detectors used in the final GERDA Phase II result was only 3.3$\pm$0.4~keV \cite{GERDA:2020xhi}. Considering that the \Qbb\ value in \Ge{76} is 2039~keV, this corresponds to a relative energy resolution of 0.16\% (FWHM). In particular, the large ICPC-type detectors constituting the bulk of the LEGEND-200 detectors featured an even better energy resolution of 2.9$\pm$0.1~keV (FWHM). 
+
+%In bolometers the energy is measured by detecting a temperature rise in crystals with very small specific heat. Several bolometric crystals have been proposed and tested for \bb\ searches, such as tellurite (TeO$_{2}$), lithium molybdate (LMO, Li$_2$$^{100}$MoO$_4$) and zinc selenide (ZnSe). For these three technologies, FWHM energy resolutions at the Q-values of the corresponding \bb\ emitters were measured to be: 7.8$\pm$0.5 \cite{CUORE:2021mvw}, 7.6$\pm$0.7 \cite{CUPID:2020aow} and 21.8$\pm$0.3 keV \cite{CUPID:2022puj}, respectively. TeO$_{2}$ and LMO detectors thus feature similar resolution performance among them based on the heat measurement, and superior to the ZnSe one. However, as we will see in the following (sect.~\ref{subsec:bgr_mitigation}), LMO detectors offer an advantage over TeO$_{2}$ ones, as they provide an additional scintillation light signal.
 
 
 
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Background mitigation (other than energy resolution)} \label{subsec:bgr_mitigation}
+\subsubsection{Minimizing $\upsilon_2$: Background index} \label{subsec:bgr_mitigation}
 
-Double beta decay experiments are mostly about suppressing the background sources mentioned in Sect.~\ref{subsec:bgr_sources}. As we have seen already, the mere presence of background in the region of interest around \Qbb\ changes the regime of the \mbb\ sensitivity from a $(\Mbb \cdot t)^{-1/2}$ dependence to $(\Mbb \cdot t)^{-1/4}$. In the following, we describe the background mitigation techniques employed by \bbonu\ experiments. These can be separated into {\emph passive} and {\emph active} techniques, depending on whether detector information is used or not.
+Minimizing the background index, $c$, in $\upsilon_2$, is the main business of 
+\bbonu\ experiments. 
+%Double beta decay experiments are mostly about suppressing the background sources mentioned in Sect.~\ref{subsec:bgr_sources}. As we have seen already, the mere presence of background in the region of interest around \Qbb\ changes the regime of the \mbb\ sensitivity from a $(\Mbb \cdot t)^{-1/2}$ dependence to $(\Mbb \cdot t)^{-1/4}$. In the following, we describe the 
+Background mitigation techniques can be separated into {\emph passive} and {\emph active}, depending on whether detector information is used or not.
 
 Starting with passive mitigation techniques, the use of detector materials with extremely low amounts of radioactive impurities is key. Selection, manufacturing, cleaning and installation of detector materials has to be conducted with extreme care in all \bbonu\ experiments, relying on radio-pure protocols at all times. Material selection is based on extensive radio-purity assays of all detector materials, using both gamma spectroscopy and mass spectrometry techniques. Cleaning of detector components is necessary to remove surface contaminants, such as dust or lubricants from the manufacturing processes. Cleaning is carried out in detergent and acidic solutions, sometimes using ultrasonic techniques. Dedicated manufacturing processes are used to avoid contamination. Detector installation occurs in clean-room conditions. The most stringent radio-purity requirements apply to the detector active target itself, as well as to other massive detector components (e.g., shielding parts) in close proximity to it. The new-generation experiments are being fabricated from amazingly radio-pure components, some with specific activities as low as 1 $\mu$Bq/kg or less. Specific activities that are that low require \Th{232} and \U{238} impurities in the bulk materials that are below the part per trillion (ppt) level in mass, $<10^{-12}$~g/g. Ultra-pure detector material examples include organic scintillator and xenon fluids through closed-loop re-circulation and purification systems, 2,000 year old Roman shielding lead, and fabrication of ultra-pure shielding copper via electroforming techniques.
 
@@ -225,7 +262,7 @@ Despite their sizable penetrating power, external neutrons from cosmic-ray inter
 
 Liquid shields in the form of water tanks, LAr-filled cryostats or liquid scntillator buffers, are also good option for shielding against neutrons and $\gamma$-rays. Liquid shields have two additional advantages over solid ones: they can be continuously purified, and they may be turned into {\emph active} veto systems. This is possible by instrumenting them as Cherenkov/scintillation light detectors in order to tag the passage of charged particles. Plastic scintillator detectors are also often used as active veto systems against external backgrounds. Such anti-coincidence techniques, between an inner detector containing the \bbonu\ target and outer detectors, constitute a powerful active background mitigation technique. 
 
-Excellent energy resolution is, of course, another powerful active background mitigation technique, and has been discussed already, see Sect.~\ref{subsec:energyresolution}. There are, however, many other active background mitigation techniques beyond veto systems and energy resolution. 
+Excellent energy resolution is, of course, another powerful active background mitigation technique, as already discussed. There are, however, many other active background mitigation techniques beyond veto systems and energy resolution. 
 
 In addition to anti-coincidence requirements in space, delayed coincidences in time are also used to suppress backgrounds. This is the case for sequential radioactive decays with relatively short-lived isotopes. A prime example is \Bi{214}-induced background suppression via the delayed \Po{214} tag, where the \Po{214} $\alpha$ decay has a 164.3~$\mu$s half-life. 
 
@@ -239,29 +276,42 @@ Finally, another handle to suppress non-\bbtnu\ backgrounds is \emph{daughter io
 
 The lowest background rates ($c$ term in eq.~\ref{eq:mbbx2}, expressed in terms of background events per unit energy, \bb\ isotope mass and exposure time) in a \bbonu\ experiment so far were achieved by the KamLAND-Zen (see sect.~\ref{subsec:liquid_scint}) and GERDA (sect.~\ref{subsec:hpge}) experiments. Perhaps not surprisingly, given the importance of background suppression in \bbonu\ experiments, these are also the two experiments with the most stringent \bbonu\ half-life upper limits to date, see tab.~\ref{tab:bb0nu_exp}. KamLAND-Zen 800 has achieved a background rate of $1.3\times 10^{-4}$ \ckkbby\ \cite{KamLAND-Zen:2022tow}, thanks to its outstanding radio-purity, shielding and anti-coincidence techniques. On the other hand, GERDA Phase II has achieved $6.0\times 10^{-4}$ \ckkbby\ \cite{GERDA:2020xhi}, thanks to its ultra-pure crystals and pulse shape discrimination techniques. 
 
-Finally, we remark that the relevant background figure of merit, the one appearing in the \mbb\ sensitivity of eq.~\ref{eq:mbbx3}, is given by the product $c\cdot \Delta E$, that is the number of background events per unit time and \bb\ isotope mass in the entire region of interest\footnote{For simplicity, we are assuming here that the energy regiopn of interest around \Qbb\ has a width equal to the FWHM energy resolution, $\Delta E$.}. According to this figure of merit, GERDA Phase II is the current record holder in terms of lowest background conditions, with a $c\cdot \Delta E$ value of 0.002 counts/$(\kgbb\cdot\ensuremath{year})$. Considering that GERDA Phase II has accumulated a total exposure of 90.2 \kgbb$\cdot$year, the mean number of background events expected within \Qbb $\pm$ FWHM/2 was about 0.2, consistent with observations. In other words, GERDA Phase II accomplished its goal of background-free conditions. The goal of the new-generation experiments is typically to reach $10^{-4}$ \ckkbby\ background levels, and sometimes significantly better than that (eg, LEGEND-1000).
+It is interesting to compare $\upsilon_2$ for both experiments. In the case of KamLAND-Zen, $M\cdot t = 970$ kg$\cdot$year, while for GERDA 
+$M\cdot t \sim 127$ kg$\cdot$year. Thus, the product $b/M$ yields a factor of 
+$(6/1.3) \cdot (970/127) = 35$ in favor of KamLAND-Zen, which is more than compensate with the ratio of resolutions $10/0.16 = 62.5$. Indeed, in spite of its relatively modest exposure, GERDA combines an excellent energy background rate and superb resolution to obtain the best value of the figure of merit $\upsilon_2$. 
+%On the other hand, KamLAND-Zen compensates the difference with better $\upsilon_1$ (e.g, better phase space factor) and both experiment obtain similar sensitivity to the \bbonu\ decay lifetime, 
+
+%Finally, we remark that the relevant background figure of merit, the one appearing in the \mbb\ sensitivity of eq.~\ref{eq:mbbx3}, is given by the product $c\cdot \Delta E$, that is the number of background events per unit time and \bb\ isotope mass in the entire region of interest\footnote{For simplicity, we are assuming here that the energy regiopn of interest around \Qbb\ has a width equal to the FWHM energy resolution, $\Delta E$.}. According to this figure of merit, GERDA Phase II is the current record holder in terms of lowest background conditions, with a $c\cdot \Delta E$ value of 0.002 counts/$(\kgbb\cdot\ensuremath{year})$. Considering that GERDA Phase II has accumulated a total exposure of 90.2 \kgbb$\cdot$year, the mean number of background events expected within \Qbb $\pm$ FWHM/2 was about 0.2, consistent with observations. In other words, GERDA Phase II accomplished its goal of background-free conditions. The goal of the new-generation experiments is typically to reach $10^{-4}$ \ckkbby\ background levels, and sometimes significantly better than that (eg, LEGEND-1000).
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Detection efficiency} \label{subsec:efficiency}
+\subsubsection{Detection efficiency} \label{subsec:efficiency}
 
-Neutrinoless double beta decay events are extremely rare, if present at all, thus a high detection efficiency is an important requirement for a \bb\ experiment. Equation~(\ref{eq:mbbx3}) clearly indicates that the detector design should prioritize a high detection efficiency. To obtain the same increase in \mbb\ sensitivity obtained by doubling the efficiency, the mass would have to be increased by a factor of 4, assuming the same background.
+Minimizing \mbb\ requires, according to eq.~(\ref{eq:mbbx3}), maximizing the detector efficiency $\epsilon$. Notice that, when compared with the terms in $\upsilon_2$, 
+the efficiency enters as $\epsilon^2$. 
+%Neutrinoless double beta decay events are extremely rare, if present at all, thus a high detection efficiency is an important requirement for a \bb\ experiment. Equation~(\ref{eq:mbbx3}) clearly indicates that the detector design should prioritize a high detection efficiency. 
+To obtain the same increase in \mbb\ sensitivity obtained by doubling the efficiency, the mass would have to be increased by a factor of 4, or the factor
+$c\cdot \Delta E$ decreased by a factor 4. 
 
-In general, the simpler the detection scheme, the higher the detection efficiency. Homogeneous detectors, where the source material is the detection medium, provide in principle higher efficiency than a separate-source approach. This is due to a number of reasons, including geometric acceptance, absorption in the \bb\ source, back-scattering of electrons, and tracking requirements.
+In general, the simpler the detection scheme, the higher the detection efficiency. Homogeneous detectors, 
+%where the source material is the detection medium, provide in principle higher efficiency than a separate-source approach. This is due to a number of reasons, including geometric acceptance, absorption in the \bb\ source, back-scattering of electrons, and tracking requirements.
+and in particular 
+pure calorimetric approaches such as germanium diodes or bolometers tend to have the highest total signal efficiencies, and values in excess of 75\% have been obtained. 
+%
+%For the CUORE bolometric \bbonu\ search in \Te{130}, the total efficiency is 81.6$\pm$0.2\%, given by the product of the reconstruction, anti-coincidence, pulse shape discrimination and containment efficiencies \cite{CUORE:2021mvw}. The main inefficiency comes from containment requirements, accounting for the energy loss due to geometrical effects as well as bremsstrahlung.
 
-Pure calorimetric approaches such as germanium diodes or bolometers tend to have the highest total signal efficiencies, and values in excess of 75\% have been obtained. 
+%In the case of germanium diodes, the exposure-averaged efficiency in the final GERDA \bbonu\ search was 63.0$\pm$5.6\%, given by the product of electron containment, active volume, liquid argon veto and pulse shape discrimination requirements \cite{GERDA:2020xhi}. For the ICPC-type detectors alone employed in LEGEND-200, the total efficiency increases to 75.2$\pm$2.1\%, thanks to their larger crystal sizes and intrinsically better performance.
+%
+Large liquid scintillators may also have relatively high efficiencies. This is especially the case when the \bb\ source is enclosed in a inner balloon surrounded by a scintillator buffer region, as in the KamLAND-Zen experiment. Also,
+%The detector dead-time to tag and reject comsogenic backgrounds (about $\simeq$15\% in \cite{KamLAND-Zen:2022tow}) is a relevant inefficiency, in this case. Depending on the \bbonu\ analysis details, the relatively poor energy and spatial resolutions may also introduce, effectively, additional inefficiencies. For example, about 22\% of the putative \bbonu\ events would fall outside a 350~keV wide energy region of interest around \Qbb\ in \cite{KamLAND-Zen:2022tow}.
+%
+Liquid xenon TPCs share the same advantages of the other dense, homogeneous, detectors. However, both the large liquid scintillator calorimeters and the LXe TPCs, use a large fraction of their active mass as self-shielding. This implies, either giving away a substantial fraction of the mass (for example performing the analysis in a reduced volume close the center of the detector in KamLAND-Zen, SNO+ or nEXO), or weighting the events in the outer shells of the detector to take into account the increased background. In both cases one has to be careful with the definition of efficiency. Self-shielding does not come for free.  
+%they use some of the \bb\ mass close to the detector borders effectively for self-shielding, paying it with some efficiency loss.
 
-For the CUORE bolometric \bbonu\ search in \Te{130}, the total efficiency is 81.6$\pm$0.2\%, given by the product of the reconstruction, anti-coincidence, pulse shape discrimination and containment efficiencies \cite{CUORE:2021mvw}. The main inefficiency comes from containment requirements, accounting for the energy loss due to geometrical effects as well as bremsstrahlung.
-
-In the case of germanium diodes, the exposure-averaged efficiency in the final GERDA \bbonu\ search was 63.0$\pm$5.6\%, given by the product of electron containment, active volume, liquid argon veto and pulse shape discrimination requirements \cite{GERDA:2020xhi}. For the ICPC-type detectors alone employed in LEGEND-200, the total efficiency increases to 75.2$\pm$2.1\%, thanks to their larger crystal sizes and intrinsically better performance.
-
-Large liquid scintillators may also have relatively high efficiencies. This is especially the case when the \bb\ source is enclosed in a inner balloon surrounded by a scintillator buffer region, as in the KamLAND-Zen experiment. The detector dead-time to tag and reject comsogenic backgrounds (about $\simeq$15\% in \cite{KamLAND-Zen:2022tow}) is a relevant inefficiency, in this case. Depending on the \bbonu\ analysis details, the relatively poor energy and spatial resolutions may also introduce, effectively, additional inefficiencies. For example, about 22\% of the putative \bbonu\ events would fall outside a 350~keV wide energy region of interest around \Qbb\ in \cite{KamLAND-Zen:2022tow}.
-
-Liquid xenon TPCs share the same advantages of the other dense, homogeneous, detectors. However, they use some of the \bb\ mass close to the detector borders effectively for self-shielding, paying it with some efficiency loss.
-
-Some experiments perform particle tracking, such as planar configurations of \bb\ foils separate from detector media, or homogeneous xenon gas TPC. The tracking requirements typically cause a significant efficiency loss. 
+Unlike LXeTPCs, HPXeTPCs such as those being developed by NEXT do not rely on self-shielding for background reduction, but used instead particle tracking, which also comes at the expenses of a significant efficiency loss.
+%Some experiments perform particle tracking, such as planar configurations of \bb\ foils separate from detector media, or homogeneous xenon gas TPC. The tracking requirements typically cause a significant efficiency loss. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
