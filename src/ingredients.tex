@@ -1,54 +1,78 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %The discovery of \bbonu\ would represent a substantial breakthrough in particle physics. A single, unequivocal observation of the decay would prove the Majorana nature of neutrinos and the violation of lepton number. Alas, that is not, by any means, an easy task. The design of a detector capable of identifying efficiently and unambiguously such a rare signal represents a major experimental challenge.
 
-Given the sensitivity to $T_{1/2}^{0\nu}$ already achieved, the first ingredient required for the next generation of \bbonu\ experiment is a 
+%Given the sensitivity to $T_{1/2}^{0\nu}$ already achieved, the first ingredient required for the next generation of \bbonu\ experiment is a 
 %To start with, one needs a
- large mass of a suitable (and always scarce) \bb\ isotope in order to probe in a reasonable time the extremely long lifetimes expected. 
+ %large mass of a suitable (and always scarce) \bb\ isotope in order to probe in a reasonable time the extremely long lifetimes expected. 
 % For instance, for a Majorana neutrino mass of 18 meV, corresponding to the lowest possible \mbb\ value in the inverted ordering scenario (see fig.~\ref{fig:mbetabetavsmlight}), it can be estimated using eq.~(\ref{eq:Tonu}) and a sound assumption for the NMEs that half-lives in the range of $10^{27}$--$10^{28}$ years must be explored (\textit{i.e.}, at least 17 orders of magnitude longer than the age of the universe!). 
  %A better sense of what such extremely long half-lives mean can be grasped with a 
  %
- This can be easily illustrated with a simple calculation. Consider the radioactive decay law in the approximation $T_{1/2}\gg t$, where $t$ is the exposure time; in that case, the expected number of \bbonu\ events is given by
+ %This can be easily illustrated with a simple calculation. 
+ Consider the radioactive decay law in the approximation $T_{1/2}\gg t$, where $t$ is the exposure time. Assuming a putative \bbonu\ process with a lifetime $T_{1/2}^{0\nu}$, the expected number of \bbonu\ events is given by:
 %
 \begin{equation}
-N_{\bbonu} = \log2 \cdot \frac{\Mbb\cdot N_{A}}{W_{\beta\beta}} \cdot \varepsilon \cdot \frac{t}{T_{1/2}^{0\nu}}, 
+N_{\bbonu} = \log2 \cdot \frac{\Mbb\cdot N_{A}}{W_{\beta\beta}}  \frac{t}{T_{1/2}^{0\nu}}, 
 \label{eq:Nbb}
 \end{equation}
 %
-where \Mbb\ is the mass of the \bb\ emitting isotope, $N_{A}$ is the Avogadro constant, $W_{\beta\beta}$ is the molar mass of the \bb\ isotope, and $\varepsilon$ is the signal detection efficiency.
-
-Take \Xe{136} as an example, and assume that one aims to achieve a sensitivity 
-$T_{1/2}^{0\nu}\sim 10^{27}$ years (e.g, one order of magnitude better than current limits). In the absence of backgrounds, the observation of a single event implies a discovery. Solving eq.~\ref{eq:Nbb} for $ N_{\bbonu}=1$, $T_{1/2}^{0\nu} = 10^{27}$ years, $\epsilon = 1$ (perfect detector) and $t = 1$ year, yields  $\Mbb \sim 330$ kg. Considering a realistic efficiency $\epsilon \sim 0.3--0.6$, would result in an isotope mass in the range of one ton, just to observe one event per year.  
-
-%It follows from eq.~(\ref{eq:Nbb}) that, in order to observe (assuming perfect detection efficiency and no disturbing background) as little as one decay per year and assuming a Majorana neutrino mass of 18 meV ($T_{1/2}^{0\nu}\sim 10^{27}$--$10^{28}$ years), masses of \bb\ isotope of the order of one tonne are needed.
-
-On the other hand, in the presence of backgrounds, the observation of a single event is not enough to establish a discovery. Imagine now that our putative \Xe{136} experiment predicts a background of one event per year. Since the process is Poisson distributed, the probability of observing, say, 9 events when 1 is expected is $sim 10^{-6}$. Observing 9 events would therefore establish a discovery at roughly 5$\sigma$, while observing 5 events would reduce the confidence level to 
- 3$\sigma$. Thus, a single background event per year would translate in a large increase in mass (or to be precise in exposure).
- 
- %The situation becomes even more complicated when considering real experimental conditions. 
- The background processes that can mimic a \bbonu\ signal 
- %in a detector 
- are copious. All the experiments have to deal with an intrinsic background, the \bbtnu\ decay, that can only be distinguished by measuring the energy of the emitted electrons, since the neutrinos escape the detector undetected (see fig.~\ref{fig:modes}). Good energy resolution is therefore essential to prevent the \bbtnu\ spectrum tail from spreading over the \bbonu\ ROI. On the other hand, the kinematics of the reaction results in a vanishing rate of \bbtnu\ events, which decrease roughly with $E^7$, for $E \sim \Qbb$. Thus, the \bbtnu\ mode does not become a leading background up to very long \bbonu\ lifetimes  ($T_{1/2}^{0\nu} \sim 10^{28}$ year) even for a ``modest'' energy resolution of $\sim 3\%$ FWHM, typical of LXe. Instead the sensitivity of large liquid scintillator experiments such as KamLAND-Zen and SNO+, may ultimately be limited by the tail of \bbtnu\ events which enters the ROI due to their relatively poor energy resolution (KamLAND-Zen has achieved so far a resolution $\sim 10\%$ FWHM).
- 
-Energy resolution is also essential to suppress the continuous background arising from natural radioactivity, cosmic rays (and eventually solar neutrino interactions in the detector active target). Notice that a detector with a perfect energy measurement would suppress all backgrounds, since the signal would be a spike of zero width. Although no such beast has been built yet, germanium calorimeters come pretty close, with a resolution of the order of 0.15 \%. And yet, as shown by the GERDA experiment \cite{GERDA:2020xhi}, additional handles are required to control the backgrounds already for lifetimes of the order of  $10^{26}$ year. 
-%  the backgrounds arising from natural radioactivity (with a lifetime at least seventeen order of magnitude faster than the putative signal being sought), and other processes (such as cosmogenic backgrounds) spread up to energies well above the \Ge{76} \Qbb (2039 keV), and, in the absence of further handles may bury the putative, extremely weak signal. 
- 
-  %Nevertheless, this \emph{energy signature} could not be enough per se: 
- %a continuous spectrum arising from a variety of other backgrounds can easily overwhelm the signal peak. Other signatures, like particle identification or the observation of the daughter nucleus, are a bonus to provide a robust result against backgrounds. An overview of potential background sources affecting \bbonu\ experiments is given in Sect.~\ref{subsec:bgr_sources}.
-
-Several other factors such as detection efficiency or the scalability to large masses must be taken into account as well when choosing the experimental technique. In practice is not possible to optimize of all these parameters simultaneously. Different choices have led to a variety of experimental approaches. In order to compare their discovery potential, a figure of merit, the experimental sensitivity to \mbb, is normally used. We describe it in Sect.~\ref{subsec:sensitivitydefinition}., followed by a discussion on the main parameters entering this figure (Sect.~\ref{subsec:isotope} to Sect.~\ref{subsec:efficiency}).
-
-Before doing so, we note that our notation in eq.~(\ref{eq:Nbb}) --- and in the rest of this review --- differs from the usually adopted one, derived from source-equals-detector experimental configurations. In the source-equals-detector notation, one refers to the total active mass $M$ of the detector, which is related to the mass \Mbb\ in the \bb\ isotope via the following relationship:
+where \Mbb\ is the mass of the \bb\ emitting isotope\footnote{we note that our notation in eq.~(\ref{eq:Nbb}) --- and in the rest of this review --- differs from the usually adopted one, derived from source-equals-detector experimental configurations. In the source-equals-detector notation, one refers to the total active mass $M$ of the detector, which is related to the mass \Mbb\ in the \bb\ isotope via the following relationship:
 %
 \begin{equation}
 \Mbb\ = W_{\beta\beta}\cdot \frac{M}{W}\cdot a\cdot \eta ,
 \label{eq:mbbversusm}
 \end{equation}
 %
-where $W$ is the molecular weight of the molecule of the active material, $a$ is the isotopic abundance of the candidate \bbonu\ nuclide, and $\eta$ is the number of \bbonu\ element nuclei per molecule of the active mass. For example, TeO$_2$ bolometric detectors with a natural isotopic abundance in \Te{130} are characterized by $W_{\beta\beta}=129.9\ \mathrm{g/mol}$, $W=159.6\ \mathrm{g/mol}$, $a=0.34167$ and $\eta=1$, such that $\Mbb = 0.278 M$.\footnote{To stress this somewhat unconventional mass notation and to avoid any confusion, we will make use in the following of \kgbb\ as the mass unit to indicate one kilogram of \bb\ emitter mass.} \footnote{In principle the best quantity to express the \bbonu\ exposure, and the background rate per unit exposure and unit energy discussed below, is neither kg$\cdot$year nor \kgbb $\cdot$year, but rather $n_{\beta\beta}\cdot$year, where $n_{\beta\beta}=\Mbb \cdot N_A/W_{\beta\beta}$ is the number of moles of the \bb\ nuclide. To avoid an even more ``radical'' departure from commonly employed units, we stick to \kgbb$\cdot$year units in the following.}
+where $W$ is the molecular weight of the molecule of the active material, $a$ is the isotopic abundance of the candidate \bbonu\ nuclide, and $\eta$ is the number of \bbonu\ element nuclei per molecule of the active mass. For example, TeO$_2$ bolometric detectors with a natural isotopic abundance in \Te{130} are characterized by $W_{\beta\beta}=129.9\ \mathrm{g/mol}$, $W=159.6\ \mathrm{g/mol}$, $a=0.34167$ and $\eta=1$, such that $\Mbb = 0.278 M$.To stress this somewhat unconventional mass notation and to avoid any confusion, we will make use in the following of \kgbb\ as the mass unit to indicate one kilogram of \bb\ emitter mass. Notice that, in principle the best quantity to express the \bbonu\ exposure, and the background rate per unit exposure and unit energy discussed below, is neither kg$\cdot$year nor \kgbb $\cdot$year, but rather $n_{\beta\beta}\cdot$year, where $n_{\beta\beta}=\Mbb \cdot N_A/W_{\beta\beta}$ is the number of moles of the \bb\ nuclide. To avoid an even more ``radical'' departure from commonly employed units, we stick to \kgbb$\cdot$year units in the following.}, $N_{A}$ is the Avogadro constant and $W_{\beta\beta}$ is the molar mass of the \bb\ isotope.
 
+ %and $\varepsilon$ is the signal detection efficiency.
+%\cdot \varepsilon \cdot
+Take \Xe{136} as an example, and suppose that 
+%that the lifetime of the \bbonu\ process is one order of magnitude larger than current limits, e.g., 
+$T_{1/2}^{0\nu}\sim 10^{27}$ year. Assume an ideal apparatus with detection efficiency $\varepsilon =1$ and perfect energy resolution (e.g, all\bbonu\ events pile up in a perfect spike ---a Dirac's delta--- at \Qbb). Such a detector has zero expected background, and then the observation of single event implies a discovery. Solving eq.~\ref{eq:Nbb} for $ N_{\bbonu}=1$ yields  $\Mbb \cdot t \sim 330$ kg$\cdot$year. %Suppose that the experiment runs for one year. 
+%It follows that an ideal detector with efficiency one and zero background requires an exposure of several hundreds kilogram$\cdot$year of isotope mass (\Mbb) to improve current limits by one order of magnitude. 
+Introducing a realistic efficiency $\epsilon \sim 0.3-0.6$, one finds $\Mbb \cdot t \sim 0.5-1$~ton$\cdot$year. It follows that the first ingredient required for the next generation of \bbonu\ experiment is a 
+%To start with, one needs a
+ large mass of a suitable (and always scarce) \bb\ isotope in order to probe in a reasonable time the extremely long lifetimes expected. 
+
+%It follows from eq.~(\ref{eq:Nbb}) that, in order to observe (assuming perfect detection efficiency and no disturbing background) as little as one decay per year and assuming a Majorana neutrino mass of 18 meV ($T_{1/2}^{0\nu}\sim 10^{27}$--$10^{28}$ years), masses of \bb\ isotope of the order of one tonne are needed.
+
+In the presence of backgrounds, which we discuss in \ref{subsec:bgrsources} and \ref{subsec:bgrmitigation},  the observation of a single event is not enough to establish a discovery. Imagine now that our \Xe{136} experiment predicts a background of one event per year. Since the process is Poisson distributed, the probability of observing, say, 9 background events when 1 is expected is $\sim 10^{-6}$. Observing 9 events would therefore establish a discovery at roughly 5$\sigma$, e.g., roughly equivalent to observe one event in the absence of background. Thus, a single expected background event per year would translate in the need to increase the mass by, essentially, one order of magnitude, with respect to the background-free case. The second major ingredient for \bbonu\ experiments, thus, is to suppress backgrounds as much as possible, given its enormous impact in the sensitivity. 
+ %Background suppression is, therefore, essential for a \bbonu\ experiment. We discuss background sources
+ %in \ref{subsec:bgr_sources}.
+ %
+ %The situation becomes even more complicated when considering real experimental conditions. 
+% The background processes that can mimic a \bbonu\ signal 
+% %in a detector 
+% are copious. All the experiments have to deal with an intrinsic background, the \bbtnu\ decay, that can only be distinguished by measuring the energy of the emitted electrons, since the neutrinos escape the detector undetected (see fig.~\ref{fig:modes}). Good energy resolution is therefore essential to prevent the \bbtnu\ spectrum tail from spreading over the \bbonu\ ROI, or to cause pileup (in the case of isotopes with a fast \bbtnu\ mode such as \Mo{100}, the probability of overlapping two simultaneous \bbtnu\ events in a dense crystal is not negligible and in fact in the case of CUPID a leading cause of background).    
+ %
+ %On the other hand, the kinematics of the reaction results in a vanishing rate of \bbtnu\ events, which decrease roughly with $E^7$, for $E \sim \Qbb$. Thus, the \bbtnu\ mode does not become a leading background up to very long \bbonu\ lifetimes  ($T_{1/2}^{0\nu} \sim 10^{28}$ year) even for a ``modest'' energy resolution of $\sim 3\%$ FWHM, typical of LXe. Instead the sensitivity of large liquid scintillator experiments such as KamLAND-Zen and SNO+, may ultimately be limited by the tail of \bbtnu\ events which enters the ROI due to their relatively poor energy resolution (KamLAND-Zen has achieved so far a resolution $\sim 10\%$ FWHM).
+% 
+%Energy resolution 
+%It is also essential to suppress the continuous background arising from natural radioactivity, cosmic rays (and eventually solar neutrino interactions in the detector active target). 
+%Notice that a detector with a perfect energy measurement would suppress all backgrounds, since the signal would be a spike of zero width. Although no such beast has been built yet, germanium calorimeters come pretty close, with a resolution of the order of 0.15 \%. And yet, as shown by the GERDA experiment \cite{GERDA:2020xhi}, additional handles are required to control the backgrounds already for lifetimes of the order of  $10^{26}$ year. 
+%  the backgrounds arising from natural radioactivity (with a lifetime at least seventeen order of magnitude faster than the putative signal being sought), and other processes (such as cosmogenic backgrounds) spread up to energies well above the \Ge{76} \Qbb (2039 keV), and, in the absence of further handles may bury the putative, extremely weak signal. 
+ %
+  %Nevertheless, this \emph{energy signature} could not be enough per se: 
+ %a continuous spectrum arising from a variety of other backgrounds can easily overwhelm the signal peak. Other signatures, like particle identification or the observation of the daughter nucleus, are a bonus to provide a robust result against backgrounds. An overview of potential background sources affecting \bbonu\ experiments is given in Sect.~\ref{subsec:bgr_sources}.
+
+Several other factors such as the choice of isotope, detection efficiency or the scalability to large masses must be taken into account as well when choosing the experimental technique. In practice is not possible to optimize of all these parameters simultaneously. Different choices have led to a variety of experimental approaches. In order to compare their discovery potential, a figure of merit, the experimental sensitivity to \mbb, is normally used. We present a discussion in \ref{subsec:sensitivitydefinition}. 
+%describe it in Sect.~\ref{subsec:sensitivitydefinition}, followed by a discussion on the main parameters entering this figure (Sect.~\ref{subsec:isotope} to Sect.~\ref{subsec:efficiency}).
+
+%Before moving forward, we note that our notation in eq.~(\ref{eq:Nbb}) --- and in the rest of this review --- differs from the usually adopted one, derived from source-equals-detector experimental configurations. In the source-equals-detector notation, one refers to the total active mass $M$ of the detector, which is related to the mass \Mbb\ in the \bb\ isotope via the following relationship:
+%%
+%\begin{equation}
+%\Mbb\ = W_{\beta\beta}\cdot \frac{M}{W}\cdot a\cdot \eta ,
+%\label{eq:mbbversusm}
+%\end{equation}
+%%
+%where $W$ is the molecular weight of the molecule of the active material, $a$ is the isotopic abundance of the candidate \bbonu\ nuclide, and $\eta$ is the number of \bbonu\ element nuclei per molecule of the active mass. For example, TeO$_2$ bolometric detectors with a natural isotopic abundance in \Te{130} are characterized by $W_{\beta\beta}=129.9\ \mathrm{g/mol}$, $W=159.6\ \mathrm{g/mol}$, $a=0.34167$ and $\eta=1$, such that $\Mbb = 0.278 M$.\footnote{To stress this somewhat unconventional mass notation and to avoid any confusion, we will make use in the following of \kgbb\ as the mass unit to indicate one kilogram of \bb\ emitter mass.} \footnote{In principle the best quantity to express the \bbonu\ exposure, and the background rate per unit exposure and unit energy discussed below, is neither kg$\cdot$year nor \kgbb $\cdot$year, but rather $n_{\beta\beta}\cdot$year, where $n_{\beta\beta}=\Mbb \cdot N_A/W_{\beta\beta}$ is the number of moles of the \bb\ nuclide. To avoid an even more ``radical'' departure from commonly employed units, we stick to \kgbb$\cdot$year units in the following.}
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Potential background sources} \label{subsec:bgr_sources}
+\subsection{Background sources} \label{subsec:bgrsources}
+The background processes that can mimic a \bbonu\ signal 
+ %in a detector 
+ are copious. All the experiments have to deal with an intrinsic background, the \bbtnu\ decay, that can only be distinguished by measuring the energy of the emitted electrons, since the neutrinos escape the detector undetected (see fig.~\ref{fig:modes}). Good energy resolution is therefore essential to prevent the \bbtnu\ spectrum tail from spreading over the \bbonu\ ROI, or to cause pileup (in the case of isotopes with a fast \bbtnu\ mode such as \Mo{100}, the probability of overlapping two simultaneous \bbtnu\ events in a dense crystal is not negligible and in fact in the case of CUPID a leading cause of background).    
 
 Any process generating energy deposits in the detector active volume of the order of the Q-value of the double beta decay reaction is a potential background in \bbonu\ searches. The background sources can be categorized by their production mechanism, as follows: radiogenic (produced by natural radioactivity), cosmogenic (produced by the action of cosmic rays) and heliogenic (produced by the Sun). They can also be classified by their spatial origin: internal or external to the detector.
 
@@ -70,7 +94,41 @@ At the depths of underground laboratories, the other only surviving radiation be
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Sensitivity of a neutrinoless double beta decay experiment} \label{subsec:sensitivitydefinition}
+\subsection{Background mitigation} \label{subsec:bgrmitigation}
+
+%Minimizing the background index, $c$, in $\upsilon_2$, is the main business of 
+%\bbonu\ experiments. 
+%Double beta decay experiments are mostly about suppressing the background sources mentioned in Sect.~\ref{subsec:bgr_sources}. As we have seen already, the mere presence of background in the region of interest around \Qbb\ changes the regime of the \mbb\ sensitivity from a $(\Mbb \cdot t)^{-1/2}$ dependence to $(\Mbb \cdot t)^{-1/4}$. In the following, we describe the 
+%Background mitigation techniques can be separated into {\emph passive} and {\emph active}, depending on whether detector information is used or not. We discuss first the passive techniques, which are common to most experiment. 
+%
+%Starting with passive mitigation techniques, 
+
+All \bbonu\ experiment must use materials with extremely low amounts of radioactive impurities. Selection, manufacturing, cleaning and installation of detector materials has to be conducted with extreme care in all \bbonu\ experiments, relying on radio-pure protocols at all times. Material selection is based on extensive radio-purity assays of all detector materials, using both gamma spectroscopy and mass spectrometry techniques. Cleaning of detector components is necessary to remove surface contaminants, such as dust or lubricants from the manufacturing processes. Cleaning is carried out in detergent and acidic solutions, sometimes using ultrasonic techniques. Dedicated manufacturing processes are used to avoid contamination. Detector installation occurs in clean-room conditions. The most stringent radio-purity requirements apply to the detector active target itself, as well as to other massive detector components (e.g., shielding parts) in close proximity to it. The new-generation experiments are being fabricated from amazingly radio-pure components, some with specific activities as low as 1 $\mu$Bq/kg or less. Specific activities that are that low require \Th{232} and \U{238} impurities in the bulk materials that are below the part per trillion (ppt) level in mass, $<10^{-12}$~g/g. Ultra-pure detector material examples include organic scintillator and xenon fluids through closed-loop re-circulation and purification systems, 2,000 year old Roman shielding lead, and fabrication of ultra-pure shielding copper via electroforming techniques.
+
+Beyond primordial activity from contaminants in the natural decay chains, production inside detector materials of radioactive nuclides by cosmic-rays may also occur. Cosmogenic activation is, of course, more severe on surface. Therefore, for experiments using materials that can get activated (like germanium-based experiments), underground fabrication and storage of the detector components is essential.
+
+Radon gas, particularly \Rn{222}, is an intermediate by-product of the natural decay chains, that also needs to be suppressed inside and near \bbonu\ experiments. Being gaseous, radon does not stay trapped within detector components and may infiltrate inside detector sensitive regions, hence requiring a separate mitigation strategy. Also, radon daughters tend to be electrically charged and stick to surfaces. Concerning airborne radon, most deep underground laboratories have radon abatement systems capable of suppressing the radon concentration in the air by several orders of magnitude, down to 1 mBq/m$^3$ concentrations, providing effectively radon-free air in the vicinity of the detectors. The flushing of pure nitrogen gas is an equally effective, although more expensive, alternative to provide a radon-free environment. The radon concentration in the air is monitored in real-time at underground locations. Radon may also diffuse inside fluid-based (liquid or gaseous) \bbonu\ detectors, typically via emanation from detector materials. Active filtration systems (radon traps) may be used to mitigate this internal radon component.
+
+Concerning external backgrounds originated outside the detectors, the techniques to passively mitigate them involve placing the experiments at deep underground laboratories, and by enclosing them into shielding systems. 
+
+Deep underground laboratories are research infrastructures with an overburden typically larger than 1000 meters water equivalent (m.w.e.). In general, the depth requirement for a \bbonu\ experiment varies according to the detector technology. A very efficient shielding and additional detection signatures such as topological information can compensate the benefits of a very deep location. Figure \ref{fig:underground_facilities} shows the laboratory depth and size of several underground facilities currently available to host physics experiments around the world. In addition to depth, other important factors characterizing the underground sites include the size of the excavated halls available for science, and the services provided to the experiments. The size is an important factor to take into account especially for experimental proposals at the ton-scale and beyond, given that some of them need large volumes. The most relevant deep underground laboratories for current and future \bbonu\ experiments, listed in order of decreasing depth, are at the moment: the China Jinping Underground Laboratory (CJPL, China), SNOLAB (Canada), the Gran Sasso National Laboratory (LNGS, Italy), the Sanford Underground Research Facility (SURF, USA), the Kamioka Observatory (Japan) and the Canfranc Underground Laboratory (LSC, Spain). For a recent review of the currently available underground facilities around the world, see reference \cite{Ianni:2023fvs}. 
+
+%%%%%
+\begin{figure}[t!b!]
+\begin{center}
+\includegraphics[width=\textwidth]{img/UndergroundFacilities.png}
+%\vspace*{8pt}
+\caption{\label{fig:underground_facilities}Overview of underground facilities located around the world. The size (volume of science space) and effective shielding depth (total muon flux) are shown. Some muon flux values are estimated using a recent parameterization \cite{JNE:2020bwn}. Figure from \cite{Baudis:2022pzb,Heise:2022iaf}.}
+\end{center}
+\end{figure}
+%%%%%
+
+Shielding systems surrounding the detectors are another very effective technique to passively suppress external backgrounds. As such, they are used ubiquitously in \bbonu\ experiments. In the design of a shielding system against external backgrounds, a \emph{graded shielding} principle is followed: the thickness of a shield component does not need to reduce the flux below the contribution of the next inner component, with the innermost shield component selected to be the radiopurest.
+
+Despite their sizable penetrating power, external neutrons from cosmic-ray interactions and from $(\alpha$,n) reactions can be shielded with layers of hydrogenous material. On the other hand, the external $\gamma$-ray flux produced by radioactive decays in the rock of the underground cavern can be suppressed via dense, high $Z$, radiopure materials such as lead and copper. 
+
+
+\subsection{Sensitivity of a \bbonu\ experiment} \label{subsec:sensitivitydefinition}
 
 %All \bbonu\ experiments have to deal with non-negligible backgrounds, an only partially efficient \bbonu\ event selection, and more or less difficulties to extrapolate their detection technique to large masses. 
 
@@ -106,7 +164,9 @@ with the background rate $c$ expressed in \ckkbby, then:
 %
 \begin{equation}
 \mbb = K_2  \ \sqrt{1/\varepsilon} \ \Big(\frac{c\cdot \Delta E}{\Mbb \cdot t}\Big)^{1/4} 
-= \sqrt{\upsilon_1/\varepsilon}  \ \Big(\frac{\upsilon_2}{t}\Big)^{1/4} 
+%= \sqrt{\upsilon_1/\varepsilon}  
+=\ \Big(\frac{\upsilon_1^2 \upsilon_2}{\varepsilon^2}\Big)^{1/4}
+%\Big(\frac{\upsilon_2}{t}\Big)^{1/4} 
 \label{eq:mbbx3}
 \end{equation}
 %
@@ -121,9 +181,9 @@ $$\upsilon_2 = \frac{c\cdot \Delta E}{\Mbb t}.$$
 %\ref{eq:mbbx3}, dictate that \mbb\ is minimized when the two figures of merit
 %$\upsilon_1 = \frac{W_{\bb}}{G^{0\nu}\lvert M^{0\nu}\rvert^2}$ and 
 %$\upsilon_2 = \frac{c\cdot \Delta E}{\Mbb t}$ are minimized. Both depend on the choice of the isotope, but 
-The term $\upsilon_1$ is related with the physical properties of the isotope (molar mass, NME and available phase space), while $\upsilon_2$ is related wit experimental aspects such as the energy resolution, the background index or the total mass deployed by the experiment. 
-
-
+The term $\upsilon_1$ is related with the physical properties of the isotope (molar mass, NME and available phase space) and is determined by the choice of the isotope. Instead, $\upsilon_2$ is related with experimental aspects such as the energy resolution, the background index or the total exposure achieved by the experiment. Notice that the background count
+($c\cdot \Delta E$) compensates exactly the exposure (thus, reducing the background by a factor two is equivalent to doubling the exposure), and that the term $\upsilon_2$
+compensates the detector efficiency squared (thus increasing efficiency by a factor two is equivalent to increase $\upsilon_2$ by a factor four (e.g., increasing the exposure by a factor four keeping the background count constant). Last, but not least, observe that, in the limit of large backgrounds, the sensitivity scales with the power 1/4. This means that an increase of exposure of a factor 16 (everything else being the same) needs to be achieved to improve the sensitivity by a factor two. Another way to read equation \ref{eq:mbbx3} is to assert that \bbonu\ experiments can only be scaled if the background level can be kept close to the ``background free'' regime. 
 
 %Two aspects of eq.~(\ref{eq:mbbx2}), and in particular of our definition of the background rate $c$, deserve further clarification. First, for a given background level $b$, the background rate $c$ will in general depend on the choice of the energy window $\Delta E$, the latter quantity being typically of the order of the FWHM energy resolution of the experiment. This is the case if the background energy spectrum around \Qbb\ is not flat. Similarly, the background rate $c$ will in general depend on the mass \Mbb\ of the \bb\ emitting material considered. This is the case for backgrounds that are not uniformly distributed within the active mass, such as surface contaminations of materials or backgrounds that are of external origin. As already assumed in deriving eq.~(\ref{eq:mbbx3}), all background rate values are relative to the total mass \Mbb\ appearing in the signal count rate computation of eq.~(\ref{eq:Nbb}). 
 
@@ -131,8 +191,44 @@ The term $\upsilon_1$ is related with the physical properties of the isotope (mo
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{Minimizing $\upsilon_1$: molar mass, \Qbb\ and NMEs.} \label{subsec:isotope}
-In nature, 35 naturally-occurring isotopes are \bb\ emitters, but practical considerations, such as isotope abundance, as well as feasibility of procurement,   purification and enrichment, dictate that only a few are suitable for \bbonu\ searches. Only 11 isotopes with large \Qbb ($Q_{\beta\beta}>2$ MeV)  have been proposed for \bbonu\ searches, and of those, only four (\Ge{76}, \Xe{136}, \Tl{130}, and \Mo{100}) are considered for the next generation of experiments (Next Generation Set or NGS, hereafter) and will be the focus of our discussion. 
+\subsubsection{Minimizing $\upsilon_1$: molar mass, \Qbb\ and NMEs.} %\label{subsec:isotope}
+
+\begin{table}[t!b!]
+\centering
+\caption{\label{tab:bb0nu_exp} Current best limits on the half-life of \bbonu\ processes for the 9 studied isotopes.}
+\begin{tabular}{rcl}
+\toprule
+Isotope & $T_{1/2}^{0\nu}\ \text{(years)}$ & Experiment \\ \midrule
+%
+\Ca{48} & $>5.8 \times 10^{22}$ & ELEGANT VI \cite{Umehara:2008ru} \\
+%
+\Ge{76} & $>1.8 \times 10^{26}$ & GERDA \cite{GERDA:2020xhi} \\
+%
+\Se{82} & $>4.6 \times 10^{24}$ & CUPID-0 \cite{CUPID:2022puj} \\
+%
+\Zr{96} & $>9.2 \times 10^{21}$ & NEMO-3 \cite{NEMO-3:2009fxe}  \\
+%
+\Mo{100} & $>1.8 \times 10^{24}$ & CUPID-Mo \cite{Augier:2022znx}  \\
+%
+\Cd{116} & $>2.2 \times 10^{23}$ & Aurora \cite{Barabash:2018yjq}   \\
+%
+\Te{128} & $>3.6 \times 10^{24}$ & CUORE \cite{CUORE:2022piu} \\
+%
+\Te{130} & $>2.2 \times 10^{25}$ & CUORE \cite{CUORE:2021mvw} \\
+%
+\Xe{136} & $>2.3 \times 10^{26}$ & KamLAND-Zen \cite{KamLAND-Zen:2022tow} \\
+%
+\Nd{150} & $>2.0 \times 10^{22}$ & NEMO-3 \cite{NEMO-3:2016qxo} \\
+\bottomrule
+%\end{narrowtabular}
+\end{tabular}
+\end{table}
+%%%%%%
+
+In nature, 35 naturally-occurring isotopes are \bb\ emitters, but practical considerations, such as isotope abundance, as well as feasibility of procurement,   purification and enrichment, dictate that only a few are suitable for \bbonu\ searches. 
+Table~\ref{tab:bb0nu_exp} shows the best current \bbonu\ limits for the 9 isotopes for which direct \bbtnu\ decay direct measurements exist, and includes also a recent limit for \Te{128}  (for which a direct measurement of the two-neutrino mode remains elusive). Notice, however, that practical considerations (isotopic abundance, procurement, purity, enrichment, and cost) make unpractical the use at large scale of some of these (such as \Ca{48}, \Zr{96}, \Cd{116} and \Nd{150}). Of the remaining isotopes, three have been used by current-generation experiments (\Ge{76}, \Xe{136} and \Tl{130}), which have set limits to their lifetime in excess of $10^{25}-10^{26}$year, while \Mo{100} has been selected for the CUPID experiment. Hereafter we will refer to this set as Next Generation Set or NGS. 
+
+%Only 11 isotopes with large \Qbb ($Q_{\beta\beta}>2$ MeV)  have been proposed for \bbonu\ searches, and of those, only four (\Ge{76}, \Xe{136}, \Tl{130}, and \Mo{100}) are considered for the next generation of experiments (Next Generation Set or NGS, hereafter) and will be the focus of our discussion. 
 
 Minimizing $\upsilon_1$ requires maximizing the product $G^{0\nu}\lvert M^{0\nu}\rvert^2$ and minimizing the molar mass. The two requirements contradict each other, since, for most isotopes, larger \Qbb\ implies also larger molar mass. On the other hand, since $G^{0\nu} \sim Q_{\beta\beta}^5$ \cite{Vogel:2008sx}, isotopes with large $Q$-values are strongly favored. The factor $\lvert M^{0\nu}\rvert^2$ in $\upsilon_1$, also favors strongly isotopes with larger NMEs. 
 
@@ -146,10 +242,9 @@ Minimizing $\upsilon_1$ requires maximizing the product $G^{0\nu}\lvert M^{0\nu}
 
 As shown in fig.~\ref{fig:phase_space}, 
 \Ge{76}, has the less favorable phase space factor of the NGS (but the lightest molar mass), while the other three isotopes have similar values. Notice also that the most favorable phase space factors (${\rm ^{150}Nd}$ and ${\rm ^{48}Ca}$), correspond to isotopes which are not considered feasible for practical reasons.   
+Fig.~ \ref{fig:NME_full}, on the other hand, show that the values of nuclear matrix elements are rather similar for the NGS, and in fact, the uncertainty associated with the predictions of the different models is much large than the variations between isotopes for a given set of NMEs. 
 
-Fig.~ \ref{fig:NME_full}, on the other hand, show that the values of nuclear matrix elements are rather similar for most isotopes (with the exception of \Ca{48}), and in fact, the uncertainty associated with the predictions of the different models is much large than the variations between isotopes for a given set of NMEs. 
-
-Fig.~\ref{fig:SensiIdeal} shows the sensitivity that an ideal experiment using one of the four isotopes of the NGS could reach as a function of the exposure. This idealized (and totally unrealistic) sensitivity is in fact a measurement of $\upsilon_1$, and yields similar results (differing in no more than a factor two) for all the isotopes in the set.
+Fig.~\ref{fig:SensiIdeal} shows the sensitivity that a ideal experiments using the four isotopes of the NGS could reach as a function of the exposure. This idealized  sensitivity is in fact a measurement of $\upsilon_1$, and yields similar results (differing in no more than a factor two) for all the isotopes in the set.
 
 %Considering the relevant product of the phase space factor times the nuclear matrix element squared over the molar mass for the \bb\ isotopes currently being used in major experiments, we find variations of about a factor of 2 in \mbb\ sensitivity depending on the isotope and for an ideal experiment, as can be seen in fig.~\ref{fig:SensiIdeal} [REPETIR PARA GE, XE, TL, MO ONLY]. 
 %From this figure, and from phase space factor and nuclear matrix element considerations alone, we would conclude that \Se{82}, \Te{130} and \Nd{150} would be preferable to \Ge{76}. On the other hand, the molar mass term appearing in eq.~\ref{eq:k1} plays in favor of relatively light isotopes, such as \Ge{76} and \Se{82}. For example, for the same \bb\ isotope mass, a \Ge{76}-based detector contains almost twice as many \b\ nuclides as a \Nd{150}-based detector. Other factors, too, enter in the isotope choice, as discussed below.
@@ -189,7 +284,7 @@ One way to minimize $\upsilon_2$ is to maximize the mass of the isotope being de
 %
 %Consider \Xe{136} first. Xenon production is moderately high\footnote{The current xenon production is about 100 tons/yr, as a by-product of oxygen extraction from the air for the steel industry. Possible alternative techniques to increase this value are being explored \cite{Avasthi:2021lgy}.} and \Xe{136} is easier (and thus cheaper) to enrich that the other isotopes. The final product, a gas, is also easy to purify. \Te{136} is also attractive. Tellurium world production is even higher than that of xenon\footnote{estimated to be $\simeq$500 tons/yr} and has the advantage of having a high, 34\%, isotopic abundance of the \bb\ emitter, thus avoiding the   the need of isotopic enrichment, which greatly reduces costs. 
 %
-It is not surprising, therefore, that the large liquid-scintillator calorimeters have chosen those isotopes (, KamLAND-Zen uses \Xe{136} and SNO+ \Te{130}), since both permit, with current technology, deploy masses on the range of the ton (in fact  the KamLAND-Zen experiment owns already 800 kg of \Xe{136}), and deploying even larger masses, in the range of 10 tons appears feasible a priori. Xenon TPCs (the future nEXO and NEXT-HD experiments) will also use \Xe{136}, benefiting of the same advantages of the large calorimeters, e.g, the possibility of deploying large masses at relatively low cost, and the economy of scale\footnote{The large liquid scintillator calorimeters, as well as the xenon TPCs, are all monolithic detectors, in which the volume, and therefore the mass, scales with the cubic power of the detector effective radius, while some ---but not all--- of the backgrounds scale with the detector surface, which is proportional to the radius squared.}. 
+It is not surprising, therefore, that the large liquid-scintillator calorimeters have chosen those isotopes (KamLAND-Zen uses \Xe{136} and SNO+ \Te{130}), since both permit, with current technology, deploy masses on the range of the ton (in fact  the KamLAND-Zen experiment owns already 800 kg of \Xe{136}), and deploying even larger masses, in the range of 10 tons appears feasible a priori. Xenon TPCs (the future nEXO and NEXT-HD experiments) will also use \Xe{136}, benefiting of the same advantages of the large calorimeters, e.g, the possibility of deploying large masses at relatively low cost, and the economy of scale\footnote{The large liquid scintillator calorimeters, as well as the xenon TPCs, are all monolithic detectors, in which the volume, and therefore the mass, scales with the cubic power of the detector effective radius, while some ---but not all--- of the backgrounds scale with the detector surface, which is proportional to the radius squared.}. 
 
 %Unfortunately, the \bb\ isotopes are not always abundant in nature, often requiring enrichment in order to obtain large, concentrated masses.
 
@@ -208,7 +303,7 @@ It is not surprising, therefore, that the large liquid-scintillator calorimeters
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{Minimizing $\upsilon_2$: Energy resolution} \label{subsec:energyresolution}
+\subsubsection{Minimizing $\upsilon_2$: Energy resolution} %\label{subsec:energyresolution}
 %
 %Together with a large isotope mass, good energy resolution is a necessary (but not sufficient!) requirement for the \emph{ultimate} \bbonu\ experiment. It is the only protection against the intrinsic \bbtnu\ background, and improves the signal-to-noise ratio in the region of interest around \Qbb. 
 
@@ -229,38 +324,17 @@ lithium molybdate (LMO, Li$_2$$^{100}$MoO$_4$), for which the measured resolutio
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{Minimizing $\upsilon_2$: Background index} \label{subsec:bgr_mitigation}
+\subsubsection{Minimizing $\upsilon_2$: Background index} %\label{subsec:bgr_mitigation}
 
 Minimizing the background index, $c$, in $\upsilon_2$, is the main business of 
-\bbonu\ experiments. 
+\bbonu\ experiments. In addition of passive techniques, discussed in 
+\ref{subsec:bgrmitigation}, active techniques, which involver detector information are used to achieve the lowest possible background rate.
+
 %Double beta decay experiments are mostly about suppressing the background sources mentioned in Sect.~\ref{subsec:bgr_sources}. As we have seen already, the mere presence of background in the region of interest around \Qbb\ changes the regime of the \mbb\ sensitivity from a $(\Mbb \cdot t)^{-1/2}$ dependence to $(\Mbb \cdot t)^{-1/4}$. In the following, we describe the 
-Background mitigation techniques can be separated into {\emph passive} and {\emph active}, depending on whether detector information is used or not.
+%Background mitigation techniques can be separated into {\emph passive} and {\emph active}, depending on whether detector information is used or not.
 
-Starting with passive mitigation techniques, the use of detector materials with extremely low amounts of radioactive impurities is key. Selection, manufacturing, cleaning and installation of detector materials has to be conducted with extreme care in all \bbonu\ experiments, relying on radio-pure protocols at all times. Material selection is based on extensive radio-purity assays of all detector materials, using both gamma spectroscopy and mass spectrometry techniques. Cleaning of detector components is necessary to remove surface contaminants, such as dust or lubricants from the manufacturing processes. Cleaning is carried out in detergent and acidic solutions, sometimes using ultrasonic techniques. Dedicated manufacturing processes are used to avoid contamination. Detector installation occurs in clean-room conditions. The most stringent radio-purity requirements apply to the detector active target itself, as well as to other massive detector components (e.g., shielding parts) in close proximity to it. The new-generation experiments are being fabricated from amazingly radio-pure components, some with specific activities as low as 1 $\mu$Bq/kg or less. Specific activities that are that low require \Th{232} and \U{238} impurities in the bulk materials that are below the part per trillion (ppt) level in mass, $<10^{-12}$~g/g. Ultra-pure detector material examples include organic scintillator and xenon fluids through closed-loop re-circulation and purification systems, 2,000 year old Roman shielding lead, and fabrication of ultra-pure shielding copper via electroforming techniques.
-
-Beyond primordial activity from contaminants in the natural decay chains, production inside detector materials of radioactive nuclides by cosmic-rays may also occur. Cosmogenic activation is, of course, more severe on surface. Therefore, for experiments using materials that can get activated (like germanium-based experiments), underground fabrication and storage of the detector components is essential.
-
-Radon gas, particularly \Rn{222}, is an intermediate by-product of the natural decay chains, that also needs to be suppressed inside and near \bbonu\ experiments. Being gaseous, radon does not stay trapped within detector components and may infiltrate inside detector sensitive regions, hence requiring a separate mitigation strategy. Also, radon daughters tend to be electrically charged and stick to surfaces. Concerning airborne radon, most deep underground laboratories have radon abatement systems capable of suppressing the radon concentration in the air by several orders of magnitude, down to 1 mBq/m$^3$ concentrations, providing effectively radon-free air in the vicinity of the detectors. The flushing of pure nitrogen gas is an equally effective, although more expensive, alternative to provide a radon-free environment. The radon concentration in the air is monitored in real-time at underground locations. Radon may also diffuse inside fluid-based (liquid or gaseous) \bbonu\ detectors, typically via emanation from detector materials. Active filtration systems (radon traps) may be used to mitigate this internal radon component.
-
-Concerning external backgrounds originated outside the detectors, the techniques to passively mitigate them involve placing the experiments at deep underground laboratories, and by enclosing them into shielding systems. 
-
-Deep underground laboratories are research infrastructures with an overburden typically larger than 1000 meters water equivalent (m.w.e.). In general, the depth requirement for a \bbonu\ experiment varies according to the detector technology. A very efficient shielding and additional detection signatures such as topological information can compensate the benefits of a very deep location. Figure \ref{fig:underground_facilities} shows the laboratory depth and size of several underground facilities currently available to host physics experiments around the world. In addition to depth, other important factors characterizing the underground sites include the size of the excavated halls available for science, and the services provided to the experiments. The size is an important factor to take into account especially for experimental proposals at the ton-scale and beyond, given that some of them need large volumes. The most relevant deep underground laboratories for current and future \bbonu\ experiments, listed in order of decreasing depth, are at the moment: the China Jinping Underground Laboratory (CJPL, China), SNOLAB (Canada), the Gran Sasso National Laboratory (LNGS, Italy), the Sanford Underground Research Facility (SURF, USA), the Kamioka Observatory (Japan) and the Canfranc Underground Laboratory (LSC, Spain). For a recent review of the currently available underground facilities around the world, see reference \cite{Ianni:2023fvs}. 
-
-%%%%%
-\begin{figure}[t!b!]
-\begin{center}
-\includegraphics[width=\textwidth]{img/UndergroundFacilities.png}
-%\vspace*{8pt}
-\caption{\label{fig:underground_facilities}Overview of underground facilities located around the world. The size (volume of science space) and effective shielding depth (total muon flux) are shown. Some muon flux values are estimated using a recent parameterization \cite{JNE:2020bwn}. Figure from \cite{Baudis:2022pzb,Heise:2022iaf}.}
-\end{center}
-\end{figure}
-%%%%%
-
-Shielding systems surrounding the detectors are another very effective technique to passively suppress external backgrounds. As such, they are used ubiquitously in \bbonu\ experiments. In the design of a shielding system against external backgrounds, a \emph{graded shielding} principle is followed: the thickness of a shield component does not need to reduce the flux below the contribution of the next inner component, with the innermost shield component selected to be the radiopurest.
-
-Despite their sizable penetrating power, external neutrons from cosmic-ray interactions and from $(\alpha$,n) reactions can be shielded with layers of hydrogenous material. On the other hand, the external $\gamma$-ray flux produced by radioactive decays in the rock of the underground cavern can be suppressed via dense, high $Z$, radiopure materials such as lead and copper. 
-
-Liquid shields in the form of water tanks, LAr-filled cryostats or liquid scntillator buffers, are also good option for shielding against neutrons and $\gamma$-rays. Liquid shields have two additional advantages over solid ones: they can be continuously purified, and they may be turned into {\emph active} veto systems. This is possible by instrumenting them as Cherenkov/scintillation light detectors in order to tag the passage of charged particles. Plastic scintillator detectors are also often used as active veto systems against external backgrounds. Such anti-coincidence techniques, between an inner detector containing the \bbonu\ target and outer detectors, constitute a powerful active background mitigation technique. 
+External to the detectors themselves, experiment make extensive use of {active} veto systems, such as 
+liquid shields in the form of water tanks, LAr-filled cryostats or liquid scintillator buffers. Such shields are instrumented with Cherenkov/scintillation light detectors in order to tag the passage of charged particles. Plastic scintillator detectors are also often used as active veto systems against external backgrounds. Such anti-coincidence techniques, between an inner detector containing the \bbonu\ target and outer detectors, constitute a powerful active background mitigation technique. 
 
 Excellent energy resolution is, of course, another powerful active background mitigation technique, as already discussed. There are, however, many other active background mitigation techniques beyond veto systems and energy resolution. 
 
@@ -268,13 +342,15 @@ In addition to anti-coincidence requirements in space, delayed coincidences in t
 
 Signal and background events have also different spatial distributions. Signal events are typically distributed uniformly in the detector volume. External backgrounds accumulate on, or enter from, detector surfaces. This is also exploited to suppress backgrounds via detector fiducialization. 
 
-The topological information of the energy deposits in the active volume is also used. Gamma-ray background interactions producing multi-site energy deposits, typically via multi-Compton interactions, may be readily vetoed in segmented or imaging detectors. Pulse shape analysis in individual Ge detectors is an alternative way to identify and suppress multi-site backgrounds. Low density detectors, such as xenon gas TPCs and where MeV-scale particles produce extended tracks, provide even more detailed topological information. In this case, information from the reconstructed $dE/dx$ energy loss profiles along the track can distinguish single-electron background events from double-electron signal events.
+The topological information of the energy deposits in the active volume is also used. Gamma-ray background interactions producing multi-site energy deposits, typically via multi-Compton interactions, may be readily vetoed in segmented or imaging detectors. Pulse shape analysis in individual Ge detectors is an alternative way to identify and suppress multi-site backgrounds. Low density detectors, such as xenon gas TPCs where MeV-scale particles produce extended tracks, provide even more detailed topological information. In this case, information from the reconstructed $dE/dx$ energy loss profiles along the track can distinguish single-electron background events from double-electron signal events.
 
 Particle identification is another powerful background suppression handle. A notable example is $\alpha/\beta$ discrimination in scintillating bolometers. As the light yield for energy depositions induced by $\alpha$ and $\beta$ particles of the same energy is different, the simultaneous detection of light and heat leads to an effective rejection of the $\alpha$ background. 
 
+A powerful handle, used by both liquid scintillator detectors (KamLAND-Zen, SNO+) and LXe TPCs (nEXO) is {\em self-shielding}. 
+
 Finally, another handle to suppress non-\bbtnu\ backgrounds is \emph{daughter ion tagging} in coincidence with the detection of the two beta electrons. This has been proposed, and is actively being pursued, for both liquid and gas xenon TPC detectors. In this case, the \bbonu\ decay is ${\rm ^{136}Xe}\to {\rm ^{136}Ba^{++}}+2e^-$. In liquid, the \Ba{136}$^{++}$ ion rapidly captures an electron in the charge cloud following a \bb\ event, resulting in \Ba{136}$^{+}$, and barium neutralization may also occur. In the less dense gas environment, no recombination is expected, and the \Ba{136}$^{++}$ doubly-charged state remains stable. Recently, both the nEXO \cite{nEXO:2018nxx} and NEXT \cite{McDonald:2017izm,Rivilla:2020cvm} collaborations made substantial progress in isolating and detecting a lone Ba ion in-situ, via fluorescence imaging techniques. Daughter ion tagging is undoubtedly very challenging from the technical point of view, but the payoff would be huge if the R\&D were to be successful.
 
-The lowest background rates ($c$ term in eq.~\ref{eq:mbbx2}, expressed in terms of background events per unit energy, \bb\ isotope mass and exposure time) in a \bbonu\ experiment so far were achieved by the KamLAND-Zen (see sect.~\ref{subsec:liquid_scint}) and GERDA (sect.~\ref{subsec:hpge}) experiments. Perhaps not surprisingly, given the importance of background suppression in \bbonu\ experiments, these are also the two experiments with the most stringent \bbonu\ half-life upper limits to date, see tab.~\ref{tab:bb0nu_exp}. KamLAND-Zen 800 has achieved a background rate of $1.3\times 10^{-4}$ \ckkbby\ \cite{KamLAND-Zen:2022tow}, thanks to its outstanding radio-purity, shielding and anti-coincidence techniques. On the other hand, GERDA Phase II has achieved $6.0\times 10^{-4}$ \ckkbby\ \cite{GERDA:2020xhi}, thanks to its ultra-pure crystals and pulse shape discrimination techniques. 
+The lowest background rates ($c$ term in eq.~\ref{eq:mbbx2}, expressed in terms of background events per unit energy, \bb\ isotope mass and exposure time) in a \bbonu\ experiment so far were achieved by the KamLAND-Zen (see sect.~\ref{subsec:liquid_scint}) and GERDA (sect.~\ref{subsec:hpge}) experiments. Perhaps not surprisingly, given the importance of background suppression in \bbonu\ experiments, these are also the two experiments with the most stringent \bbonu\ half-life upper limits to date. KamLAND-Zen  has achieved a background rate of $1.3\times 10^{-4}$ \ckkbby\ \cite{KamLAND-Zen:2022tow}, thanks to its outstanding radio-purity, shielding, self-shielding and anti-coincidence techniques. On the other hand, GERDA Phase II has achieved $6.0\times 10^{-4}$ \ckkbby\ \cite{GERDA:2020xhi}, thanks to its ultra-pure crystals and pulse shape discrimination techniques. 
 
 It is interesting to compare $\upsilon_2$ for both experiments. In the case of KamLAND-Zen, $M\cdot t = 970$ kg$\cdot$year, while for GERDA 
 $M\cdot t \sim 127$ kg$\cdot$year. Thus, the product $b/M$ yields a factor of 
@@ -287,7 +363,8 @@ $(6/1.3) \cdot (970/127) = 35$ in favor of KamLAND-Zen, which is more than compe
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{Detection efficiency} \label{subsec:efficiency}
+\subsubsection{Detection efficiency} 
+%\label{subsec:efficiency}
 
 Minimizing \mbb\ requires, according to eq.~(\ref{eq:mbbx3}), maximizing the detector efficiency $\epsilon$. Notice that, when compared with the terms in $\upsilon_2$, 
 the efficiency enters as $\epsilon^2$. 
